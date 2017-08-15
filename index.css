@@ -41,9 +41,25 @@ html, body, .container, #start-container, #story-container {
   user-select: none;	
 }
 
-#story-container {
-	height: 95%;
-	width: 90%;
+#start-container-outer, #story-container-outer {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	transition: all 400ms ease-in;
+}
+
+#story-container-outer.hidden, #start-container-outer.hidden {
+	visibility: hidden;
+	opacity: 0;
+	display: inline-block;
+	transform: translateY(100%) scale(.3);
+}
+
+#story-container-inner {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -95,19 +111,13 @@ html, body, .container, #start-container, #story-container {
 	border-radius: 25px;
 }
 
-#story-container.hidden {
-	display: none;
-}
-
-#start-container {
+#start-container-inner {
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-}
-
-#start-container.hidden {
-	display: none;
 }
 
 h1 {
@@ -158,7 +168,7 @@ h1 {
 }
 
 @media screen and (min-width: 850px) {
-	#story-container {
+	#story-container-outer {
 		width: 800px;
 	}
 }

@@ -1,5 +1,6 @@
-const startCont = document.getElementById('start-container')
-const storyCont = document.getElementById('story-container')
+const startCont = document.getElementById('start-container-outer')
+const storyCont = document.getElementById('story-container-outer')
+const storyDisplay =document.getElementById('story-container-inner')
 const startButton = document.getElementById('startButton')
 startButton.addEventListener('click', initGame)
 
@@ -18,7 +19,7 @@ function reset() {
 	toggleDisplay(storyCont)	
 }
 
-function updateDisplay(content, container = storyCont) {
+function updateDisplay(content, container = storyDisplay) {
 	container.innerHTML = content
 }
 
