@@ -36,6 +36,11 @@ html, body, .container, #start-container, #story-container {
 	transform: translateY(3px);
 }
 
+.button * {
+	cursor: default;
+  user-select: none;	
+}
+
 #story-container {
 	height: 95%;
 	width: 90%;
@@ -123,8 +128,6 @@ h1 {
 }
 
 #startButton p {
-	cursor: default;
-  user-select: none;
   text-shadow: 0px 0px 5px #444;
 }
 
