@@ -33,13 +33,13 @@ function displayChoice(choice) {
 
 	function formatChoices(choices) {
 		if(choices.length) {
-			return choices.map(el => {
-				return (
+			return choices.reduce((acc, el) => {
+				return acc + (
 					`<div class="choiceButton button" onclick="displayChoice(choices[${el.goto}])">
 						<p>${el.text}</p>
 					</div>`
 				)
-			})	
+			}, '')	
 		}
 		else {
 			return (`
