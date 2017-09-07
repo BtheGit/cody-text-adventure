@@ -34,7 +34,7 @@ let choices = {
 			},
 			{
 				text: 'Turn and fight',
-				goto: 999
+				goto: 21
 			}
 		]
 	},
@@ -53,7 +53,7 @@ let choices = {
 			},
 			{
 				text: 'Try and talk to the government',
-				goto: 999
+				goto: 17
 			}
 		]
 	},
@@ -89,7 +89,7 @@ let choices = {
 			},
 			{
 				text: 'Help the aliens',
-				goto: 999
+				goto: 5
 			}
 		]
 	},
@@ -139,7 +139,7 @@ let choices = {
 		choices: [
 			{
 				text: 'Kill him',
-				goto: 999
+				goto: 18
 			},
 			{
 				text: 'Keep him as a hostage',
@@ -175,7 +175,7 @@ let choices = {
 			},
 			{
 				text: 'Give it to the aliens',
-				goto: 999
+				goto: 19
 			}
 		]
 	},
@@ -189,11 +189,11 @@ let choices = {
 		choices: [
 			{
 				text: 'Comply with him',
-				goto: 999
+				goto: 20
 			},
 			{
 				text: 'Fight him',
-				goto: 999
+				goto: 14
 			}
 		]
 	},
@@ -253,6 +253,62 @@ let choices = {
 			You slaughter them all without getting injured and you take their money, guns, and other valuable stuff.
 			You are now the richest and most powerful man in your dimension.`,
 		choices: []
+	},
+	17: {
+		question:
+		`You tell the government that you didn't mean to hurt anyone.
+		However, they don't care.
+		They think you are too dangerous.
+		They command you to go to space and not return.
+		You walk to the spaceship and take off.
+		When you leave the atmosphere, the spaceship explodes.
+		The government installed a bomb on your ship and it kills you.`,
+		choices: []
+	},
+	18: {
+		question:
+		`After you kill their minion, all the aliens run towards you.
+		You use your energy blast to eliminate everyone.
+		It is the extinction of the alien race.
+		You become the ruler of the alien's home planet.`,
+		choices: []
+	},
+	19: {
+		question:
+		`You give the stone to the aliens.
+		They are really happy and decide to set you free.
+		They give you a spaceship.
+		You live happily ever after travelling around space.`,
+		choices: []
+	}, 
+	20: {
+		question:
+		`The demon brings you back to life and you destroy the entire alien race.
+		You go to hell and try to resist the demon.
+		He predicted you would want to betray him so he has prepared to fight you.
+		You are no match for him. 
+		He easily beats you and takes your soul.
+		You die and have to stay in hell forever.`,
+		choices: []
+	},
+	21: {
+		question:
+		`
+		You stop running and turn to face the police.
+		They keep shooting at you but the bullets don't hurt you.
+		They get scared and call for backup.
+		The army shows up almost immediately.
+		`,
+		choices: [
+			{
+				text: 'Attack the army',
+				goto: 11
+			},
+			{
+				text: 'Try and talk to them',
+				goto: 17
+			}
+		]
 	},
 	999: {
 		question: 'INCOMPLETE',
